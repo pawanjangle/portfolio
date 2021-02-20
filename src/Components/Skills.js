@@ -5,7 +5,6 @@ const frontend = {
   SkillsName: [
     "HTML",
     "CSS",
-    "Javascript",
     "React js",
     "React Native",
     "Redux",
@@ -18,9 +17,17 @@ const backend = {
   type: "Backend",
   SkillsName: ["Node js", "Express js"],
 };
+const programmingLanguages = {
+    type: "Programming Languages",
+    SkillsName: ["JavaScript", "TypeScript"],
+}
 const database = {
   type: "Database",
   SkillsName: ["MongoDB"],
+};
+const hostingPlatforms = {
+  type: "Hosting Platforms",
+  SkillsName: ["Heroku", "AWS"],
 };
 const vcs = {
   type: "Version Control System",
@@ -33,8 +40,10 @@ const Skills = () => {
       <div className="d-flex justify-content-around flex-wrap">
         <GlassEffect skillType={frontend} />
         <GlassEffect skillType={backend} />
+        <GlassEffect skillType={programmingLanguages } />
         <GlassEffect skillType={database} />
-        <GlassEffect skillType={vcs} />
+        <GlassEffect skillType={hostingPlatforms} />      
+        <GlassEffect skillType={vcs} />      
       </div>
     </div>
   );

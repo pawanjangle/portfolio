@@ -3,7 +3,10 @@ import ProjectData from "./ProjectData"
 import Rotate from "react-reveal"
 const Projects = () => {
     return (
-        <div>
+        <div className="d-flex flex-wrap justify-content-between">
+            <ProjectData />
+            <ProjectData />
+            <ProjectData />
             <ProjectData />
         </div>
     )
