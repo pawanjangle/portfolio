@@ -12,7 +12,7 @@ const NavbarComponent = () => {
       <div className="navbar-fixed">
         <nav className="navbarglass">
           <div className="nav-wrapper px-4">
-            <a className="brand-logo">PORTFOLIO</a>
+            <a className="brand-logo" style={{fontFamily: 'Grand Hotel cursive'}}>Portfolio</a>
             <a data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>

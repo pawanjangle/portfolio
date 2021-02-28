@@ -13,19 +13,19 @@ const instagram = {
   pic: instagramss,
   liveUrl: "http://react-instagramclone.herokuapp.com",
   githubUrl: "https://github.com/pawanjangle/react-insta-clone",
-  videoUrl: "http://react-instagramclone.herokuapp.com",
+  videoUrl: "https://www.linkedin.com/posts/pawanjangle_instagramclone-social-activity-6771762546635616256-h-Wf",
 };
 const portfolio = {
   pic: portfolioss,
-  liveUrl: "http://portfolio.herokuapp.com",
+  liveUrl: "http://pawanjangle.netlify.app",
   githubUrl: "https://github.com/pawanjangle/portfolio",
-  videoUrl: "http://netshopee.herokuapp.com",
+  videoUrl: "",
 };
 const Projects = () => {
   return (
     <div className="py-5 container-fluid">
-      <h4 className="text-center text-white mb-5">Projects</h4>
-      <div className="d-flex flex-wrap justify-content-around">
+      <h4 className="text-center text-white font-weight-bold">Projects</h4>
+      <div className="d-flex flex-wrap justify-content-around flex-wrap mt-5">
         <ProjectData project={ecommerce} />
         <ProjectData project={instagram} />
         <ProjectData project={portfolio} />
