@@ -12,13 +12,11 @@ const NavbarComponent = () => {
       <div className="navbar-fixed">
         <nav className="navbarglass">
           <div className="nav-wrapper px-4">
-            <a  className="brand-logo">
-              PORTFOLIO
-            </a>
-            <a  data-target="mobile-demo" className="sidenav-trigger">
+            <a className="brand-logo">PORTFOLIO</a>
+            <a data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down sidenav">          
+            <ul id="nav-mobile" className="right hide-on-med-and-down sidenav">
               <li className="nav-item">
                 <Link
                   activeClass="active"
@@ -84,22 +82,22 @@ const NavbarComponent = () => {
         </nav>
       </div>
       <ul className="sidenav hide-on-med-and-up text-center" id="mobile-demo">
-      <li className="nav-item sidenav-close">            
-              <div className="my-3">
-                <img
-                  className="bg-dark"
-                  src={profilePic}
-                  style={{
-                    height: "50px",
-                    width: "50px",
-                    borderRadius: "25px",
-                    objectFit: "contain",
-                  }}
-                  alt=""
-                />
-              </div>
-            </li>
-            <h6 className="font-weight-bold text-dark ">Pawan Jangle</h6>  
+        <li className="nav-item sidenav-close">
+          <div className="my-3">
+            <img
+              className="bg-light"
+              src={profilePic}
+              style={{
+                height: "50px",
+                width: "50px",
+                borderRadius: "25px",
+                objectFit: "contain",
+              }}
+              alt=""
+            />
+          </div>
+        </li>
+        <h6 className="font-weight-bold text-dark ">Pawan Jangle</h6>
         <div className="d-flex align-items-center justify-content-center">
           <i className="material-icons tiny text-dark mr-3">mail_outline</i>
           <h6 className="text-dark p-2">Pawanjangle1000@gmail.com</h6>
@@ -108,7 +106,7 @@ const NavbarComponent = () => {
           <i class="material-icons tiny text-dark my-3 mr-3">call</i>
           <h6 className="text-dark">+91 9834301672</h6>
         </div>
-        
+
         <li className="nav-item sidenav-close">
           <Link
             activeClass="active"
@@ -170,16 +168,31 @@ const NavbarComponent = () => {
           </Link>
         </li>
         <div className="my-3 d-flex justify-content-around">
-          <a className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3">
+          <a
+            href="https://linkedin.com/in/pawan-jangle-a53219191"
+            className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3"
+          >
             <i className="fa fa-linkedin"></i>
           </a>
-          <a className="waves-effect waves-light btn-floating social google #f50057 pink accent-3">
+
+          <a
+            href="https://pawanjangle@gmail.com"
+            className="waves-effect waves-light btn-floating social google #f50057 pink accent-3"
+          >
             <i className="fa fa-google"></i>
           </a>
-          <a className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3">
+
+          <a
+            href="https://www.facebook.com/pawan.jangle.7"
+            className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3"
+          >
             <i class="fa fa-facebook"></i>
           </a>
-          <a className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3">
+
+          <a
+            href="https://www.instagram.com/pawandjangle/"
+            className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3"
+          >
             <i className="fa fa-instagram"></i>
           </a>
         </div>

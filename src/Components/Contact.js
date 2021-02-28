@@ -93,22 +93,22 @@ const Contact = () => {
           </div>
           <div className="d-flex justify-content-around my-3">
             <Rotate>
-              <a className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3">
+              <a href="https://linkedin.com/in/pawan-jangle-a53219191" className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3">
                 <i className="fa fa-linkedin"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a className="waves-effect waves-light btn-floating social google #f50057 pink accent-3">
+              <a href="https://pawanjangle@gmail.com" className="waves-effect waves-light btn-floating social google #f50057 pink accent-3">
                 <i className="fa fa-google"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3">
+              <a href="https://www.facebook.com/pawan.jangle.7" className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3">
                 <i class="fa fa-facebook"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3">
+              <a href="https://www.instagram.com/pawandjangle/" className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3">
                 <i className="fa fa-instagram"></i>
               </a>
             </Rotate>

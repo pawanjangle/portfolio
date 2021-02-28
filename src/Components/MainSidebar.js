@@ -14,7 +14,7 @@ const MainSidebar = () => {
       >
         <div className="my-3">
           <img
-            className="bg-dark"
+            className="bg-light"
             src={profilePic}
             style={{ height: "100px", width: "100px", borderRadius: "50px", objectFit: "contain" }}
             alt=""

@@ -1,62 +1,71 @@
 .navbarglass {
-    background: rgba(225, 29, 193, 0.45);
+    background: rgba( 205, 13, 246, 0.30 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.about {
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(14.5px);
-    -webkit-backdrop-filter: blur(14.5px);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.contact {
+    background: rgba(13, 240, 225, 0.85);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.0px);
+    -webkit-backdrop-filter: blur(11.0px);
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.about {
-    background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 18.5px );
-    -webkit-backdrop-filter: blur( 18.5px );
+.skills {
+    background: rgba(252, 242, 242, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.contact{
-    background: rgba( 21, 195, 213, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 15.0px );
-    -webkit-backdrop-filter: blur( 15.0px );
+
+.gradient {
+    background: #00F260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0575E6, #00F260);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0575E6, #00F260);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projectData {
+    background: rgba(74, 74, 74, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20.0px);
+    -webkit-backdrop-filter: blur(20.0px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.skills{
-    background: rgba( 252, 242, 242, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 15.5px );
-    -webkit-backdrop-filter: blur( 15.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+.aboutGradient {
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
 }
-.gradient{
-    background: #00F260;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.sidebar {
+    background: rgba(167, 18, 233, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.projectData{
-    background: rgba( 74, 74, 74, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 20.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.aboutGradient{
-background: #7F00FF;  
-background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
-background: linear-gradient(to right, #E100FF, #7F00FF);
-}
-.sidebar{
-background: rgba( 255, 255, 255, 0.10 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 12.5px );
--webkit-backdrop-filter: blur( 12.5px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-#toast-container{
-	top: 30px !important;
-	right: 20px !important;
-	left: auto !important;
+
+#toast-container {
+    top: 30px !important;
+    right: 20px !important;
+    left: auto !important;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import ProjectData from "./ProjectData";
 import netshop from "../Images/netshopss.png";
 import instagramss from "../Images/profile.png";
+import portfolioss from "../Images/portfolioss.png";
 const ecommerce = {
   pic: netshop,
   liveUrl: "http://netshopee.herokuapp.com",
@@ -15,8 +16,8 @@ const instagram = {
   videoUrl: "http://react-instagramclone.herokuapp.com",
 };
 const portfolio = {
-  pic: netshop,
-  liveUrl: "http://insta.herokuapp.com",
+  pic: portfolioss,
+  liveUrl: "http://portfolio.herokuapp.com",
   githubUrl: "https://github.com/pawanjangle/portfolio",
   videoUrl: "http://netshopee.herokuapp.com",
 };
