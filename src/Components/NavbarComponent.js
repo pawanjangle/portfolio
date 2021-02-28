@@ -1,85 +1,189 @@
 import React from "react";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
+import M from "materialize-css";
+import profilePic from "../Images/profilePic.jpg";
 const NavbarComponent = () => {
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".sidenav");
+    var instances = M.Sidenav.init(elems);
+  });
   return (
-    <div className="hide-on-med-and-down navbar-fixed ">
-      <nav className="sidebar">
-        <div className="nav-wrapper">
-          <a href="#" className="brand-logo">
-            Logo
-          </a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li></li>
-            <li>
-              <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Home
-              </Link>
+    <div>
+      <div className="navbar-fixed">
+        <nav className="navbarglass">
+          <div className="nav-wrapper px-4">
+            <a  className="brand-logo">
+              PORTFOLIO
+            </a>
+            <a  data-target="mobile-demo" className="sidenav-trigger">
+              <i className="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down sidenav">          
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul className="sidenav hide-on-med-and-up text-center" id="mobile-demo">
+      <li className="nav-item sidenav-close">            
+              <div className="my-3">
+                <img
+                  className="bg-dark"
+                  src={profilePic}
+                  style={{
+                    height: "50px",
+                    width: "50px",
+                    borderRadius: "25px",
+                    objectFit: "contain",
+                  }}
+                  alt=""
+                />
+              </div>
             </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+            <h6 className="font-weight-bold text-dark ">Pawan Jangle</h6>  
+        <div className="d-flex align-items-center justify-content-center">
+          <i className="material-icons tiny text-dark mr-3">mail_outline</i>
+          <h6 className="text-dark p-2">Pawanjangle1000@gmail.com</h6>
         </div>
-      </nav>
+        <div className="d-flex justify-content-center align-items-center">
+          <i class="material-icons tiny text-dark my-3 mr-3">call</i>
+          <h6 className="text-dark">+91 9834301672</h6>
+        </div>
+        
+        <li className="nav-item sidenav-close">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="nav-item sidenav-close">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            About
+          </Link>
+        </li>
+        <li className="nav-item sidenav-close">
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="nav-item sidenav-close">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Projects
+          </Link>
+        </li>
+        <li className="nav-item sidenav-close">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
+        <div className="my-3 d-flex justify-content-around">
+          <a className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a className="waves-effect waves-light btn-floating social google #f50057 pink accent-3">
+            <i className="fa fa-google"></i>
+          </a>
+          <a className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3">
+            <i className="fa fa-instagram"></i>
+          </a>
+        </div>
+      </ul>
     </div>
   );
 };

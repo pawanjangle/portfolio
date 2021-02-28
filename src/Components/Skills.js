@@ -33,10 +33,14 @@ const vcs = {
   type: "Version Control System",
   SkillsName: ["Git"],
 };
+const devops = {
+  type: "Devops",
+  SkillsName: ["Jenkins", "Docker"],
+};
 const Skills = () => {
   return (
-    <div className="bg-white p-5 gradient">
-      <h4 className="text-center">Skills</h4>
+    <div className="bg-white p-5 gradient container-fluid" >
+      <h4 className="text-center text-dark font-weight-bold">Skills</h4>
       <div className="d-flex justify-content-around flex-wrap">
         <GlassEffect skillType={frontend} />
         <GlassEffect skillType={backend} />
@@ -44,6 +48,7 @@ const Skills = () => {
         <GlassEffect skillType={database} />
         <GlassEffect skillType={hostingPlatforms} />      
         <GlassEffect skillType={vcs} />      
+        <GlassEffect skillType={devops} />      
       </div>
     </div>
   );

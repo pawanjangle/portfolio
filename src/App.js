@@ -2,25 +2,17 @@ import "./App.css";
 import NavbarComponent from "./Components/NavbarComponent";
 import About from "./Components/About";
 import { BrowserRouter } from "react-router-dom";
-import Routing from "./Components/Routing";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Element } from "react-scroll";
 import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 function App() {
-  return (
+  return (  
     <BrowserRouter>
       <div className="App">
         <NavbarComponent />
-        {/* <Routing/> */}
+        {/* <Routing/> */}    
         <Element name="home" className="element">
           <Home />
         </Element>
@@ -36,6 +28,7 @@ function App() {
         <Element name="contact" className="element">
           <Contact />
         </Element>
+
       </div>
     </BrowserRouter>
   );

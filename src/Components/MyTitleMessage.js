@@ -1,28 +1,19 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import styled from "styled-components";
-
+import {Zoom} from "react-reveal"
 export default function Titlemessage() {
   return (
-    <div
-      className="col-md-12 d-flex flex-column justify-content-center flex-wrap"
-      style={{
-        opacity: "1",
-        position: "absolute",
-        width: "100%",
-        top: "22rem",
-        zIndex: "1",
-        color: "#f50057",
-      }}
+    <Zoom><div
+      className="col-md-12 d-flex flex-column justify-content-center flex-wrap align-items-center" style={{position: "absolute", top: "30vh"}}    
     >
-      <div className="main text-center mb-3">
-        Hi, I am
+      <div className="mb-3 text-center">
+        <h5 className="text-white">Hi, I am</h5>
         <br />
-        <h4>
-          <strong>Pawan Jangle</strong>
+        <h4 style={{color: "#f50057"}}>
+          <strong className="font-weight-bold">Pawan Jangle</strong>
         </h4>
       </div>
-      <div className="sub text-center">
+      <div style={{color: "white", fontSize: "22px"}}>
         <Typewriter
           options={{
             strings: [
@@ -37,5 +28,6 @@ export default function Titlemessage() {
         />
       </div>
     </div>
+    </Zoom>
   );
 }

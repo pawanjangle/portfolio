@@ -1,15 +1,18 @@
 import React from "react";
-import profilePic from "../Images/profilePic.jpg";
-const ProjectData = () => {
+const ProjectData = ({ project}) => {
   return (
-    <div className="projectData col-md-4 m-3 p-5">
-      <div className="text-center">
-        <img src={profilePic} alt="" style={{ height: "250px" }} />
+    <div className="projectData d-flex flex-column justify-content-center col-md-4 m-5">
+      <div className="p-4">
+        <img
+          src={project.pic}
+          alt=""
+          style={{width: "100%",}}
+        />
       </div>
-      <div>
-        <a class="waves-effect waves-light btn-small">SEE LIVE</a>
-        <a class="waves-effect waves-light btn-small">SOURCE CODE</a>
-        <a class="waves-effect waves-light btn-small">WATCH VIDEO</a>
+      <div className="d-flex justify-content-around my-3">
+      <a className="waves-effect waves-light btn-small" href={project.liveUrl}>SEE LIVE</a>
+      <a className="waves-effect waves-light btn-small" href={project.githubUrl}>SOURCE CODE</a>
+      <a className="waves-effect waves-light btn-small" href={project.videoUrl}>WATCH VIDEO</a>
       </div>
     </div>
   );
