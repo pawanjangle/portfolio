@@ -9,7 +9,7 @@ const About = () => {
           <div className="col-md-4 text-center mt-3" style={{ maxHeight: "225px" }}>
             <img src={profilePic} alt="" style={{ height: "100%" }} />
           </div>
-          <div className="col-md-8 text-white d-flex flex-column flex-wrap about p-3 mt-3">           
+          <div className="col-md-8 text-white d-flex flex-column align-items-center flex-wrap about p-3 mt-3">           
               Hi there! I am Pawan Jangle
               <br />I am a Full Stack Web Developer with React.js, Redux,
               Express.js, Node.js, Mongodb, and React Native as my tech stack.
@@ -21,7 +21,7 @@ const About = () => {
               In 2018, I successfully completed my Engineering with
               specialization in 'Electrical, Electronics and Power Engineering'.
               <br />       
-            <div className="d-flex justify-content-between flex-wrap m-3">
+            <div className="d-flex justify-content-center flex-wrap m-3">
               <div className="m-3" >
                 <Link
                   activeClass="active"
