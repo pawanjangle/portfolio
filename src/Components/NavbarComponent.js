@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-scroll";
 import M from "materialize-css";
 import profilePic from "../Images/profilePic.jpg";
 const NavbarComponent = () => {
-  document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".sidenav");
-    var instances = M.Sidenav.init(elems);
-  });
+ useEffect(()=>{
+  const elems = document.querySelectorAll(".sidenav");
+  M.Sidenav.init(elems);
+ },[]);
   return (
     <div>
       <div className="navbar-fixed">
@@ -16,7 +16,7 @@ const NavbarComponent = () => {
             <a data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down sidenav">
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li className="nav-item">
                 <Link
                   activeClass="active"
@@ -81,7 +81,7 @@ const NavbarComponent = () => {
           </div>
         </nav>
       </div>
-      <ul className="sidenav hide-on-med-and-up text-center" id="mobile-demo">
+      <ul className="sidenav text-center" id="mobile-demo">
         <li className="nav-item sidenav-close">
           <div className="my-3">
             <img

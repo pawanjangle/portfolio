@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Rotate } from "react-reveal";
 import emailjs from "emailjs-com";
 import M from "materialize-css";
+import Slide from "react-reveal/Slide";
 const Contact = () => {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
@@ -23,14 +24,21 @@ const Contact = () => {
       )
       .then(
         (response) => {
-          M.toast({html: `Thank you for enquiry mr. ${name}`, classes: "#ff1744 green accent-3"})         
+          M.toast({
+            html: `Thank you for enquiry mr. ${name}`,
+            classes: "#ff1744 green accent-3",
+          });
         },
         (err) => {
-          M.toast({html: `Something went wrong`, classes: "#f50057 pink accent-3"})   
+          M.toast({
+            html: `Something went wrong`,
+            classes: "#f50057 pink accent-3",
+          });
         }
       );
   };
   return (
+    <Slide bottom>
       <div className="d-flex justify-content-around flex-wrap container-fluid bg-white flex-wrap pb-5">
         <div className="col-md-4 contact mt-5 py-5">
           <h3 className="text-center ">Hire Me.</h3>
@@ -69,7 +77,7 @@ const Contact = () => {
               name="action"
               style={{ backgroundColor: "#f50057" }}
               onClick={() => {
-                sendMail();             
+                sendMail();
               }}
             >
               Submit
@@ -86,35 +94,48 @@ const Contact = () => {
           <div className="d-flex align-items-center">
             <i className="material-icons mr-3">call</i>
             <h6> +91 9834301672</h6>
-          </div> 
+          </div>
           <div className="d-flex align-items-center">
             <i className="material-icons mr-3">mail_outline</i>
             <h6> pawanjangle1000@gmail.com</h6>
           </div>
           <div className="d-flex justify-content-around my-3">
             <Rotate>
-              <a href="https://linkedin.com/in/pawan-jangle-a53219191" className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3">
+              <a
+                href="https://linkedin.com/in/pawan-jangle-a53219191"
+                className="waves-effect waves-light btn-floating social linkedin #f50057 pink accent-3"
+              >
                 <i className="fa fa-linkedin"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a href="https://pawanjangle@gmail.com" className="waves-effect waves-light btn-floating social google #f50057 pink accent-3">
+              <a
+                href="https://pawanjangle@gmail.com"
+                className="waves-effect waves-light btn-floating social google #f50057 pink accent-3"
+              >
                 <i className="fa fa-google"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a href="https://www.facebook.com/pawan.jangle.7" className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3">
+              <a
+                href="https://www.facebook.com/pawan.jangle.7"
+                className="waves-effect waves-light btn-floating social facebook #f50057 pink accent-3"
+              >
                 <i class="fa fa-facebook"></i>
               </a>
             </Rotate>
             <Rotate>
-              <a href="https://www.instagram.com/pawandjangle/" className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3">
+              <a
+                href="https://www.instagram.com/pawandjangle/"
+                className="waves-effect waves-light btn-floating social instagram #f50057 pink accent-3"
+              >
                 <i className="fa fa-instagram"></i>
               </a>
             </Rotate>
           </div>
         </div>
       </div>
+    </Slide>
   );
 };
 

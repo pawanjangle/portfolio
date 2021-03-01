@@ -1,15 +1,16 @@
 import React from "react";
 import profilePic from "../Images/profilePic.jpg";
 import { Link } from "react-scroll";
+import {Fade, Bounce} from "react-reveal"
 const About = () => {
   return (
     <div className="p-5 aboutGradient container-fluid" style={{ backgroundColor: "#2196f3" }}>
         <h3 className="text-white text-center">About Me</h3>
         <div className="d-flex flex-wrap justify-content-center">
           <div className="col-md-4 text-center mt-3" style={{ maxHeight: "225px" }}>
-            <img src={profilePic} alt="" style={{ height: "100%" }} />
+          <Bounce left>  <img src={profilePic} alt="" style={{ height: "100%" }} /></Bounce>
           </div>
-          <div className="aboutInfo col-md-8 text-white d-flex flex-column align-items-center flex-wrap about p-3 mt-3">           
+        <Fade>  <div className="aboutInfo col-md-8 text-white d-flex flex-column align-items-center flex-wrap about p-3 mt-3">           
               Hi there! I am Pawan Jangle
               <br />I am a Full Stack Web Developer with React.js, Redux,
               Express.js, Node.js, Mongodb, and React Native as my tech stack.
@@ -62,6 +63,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
   );
