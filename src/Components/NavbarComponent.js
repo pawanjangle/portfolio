@@ -1,21 +1,35 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import M from "materialize-css";
 import profilePic from "../Images/profilePic.jpg";
 const NavbarComponent = () => {
- useEffect(()=>{
-  const elems = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(elems);
- },[]);
+  useEffect(() => {
+    const elems = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(elems);
+  }, []);
   return (
     <div>
       <div className="navbar-fixed">
         <nav className="navbarglass">
           <div className="nav-wrapper px-4">
-            <a className="brand-logo" style={{fontFamily: 'Grand Hotel cursive'}}>Portfolio</a>
-            <a data-target="mobile-demo" className="sidenav-trigger">
-              <i className="material-icons">menu</i>
-            </a>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <a
+                className="brand-logo"
+                style={{ fontFamily: "Grand Hotel cursive", cursor: "pointer"}}
+              >
+                Portfolio
+              </a>
+              <a data-target="mobile-demo" className="sidenav-trigger">
+                <i className="material-icons">menu</i>
+              </a>
+            </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li className="nav-item">
                 <Link
