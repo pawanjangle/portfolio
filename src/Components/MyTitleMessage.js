@@ -19,7 +19,7 @@ export default function Titlemessage() {
             strings: [
               "Mern Stack Developer",
               "React Native Developer",
-              "Graphic Designer",
+              "DEVOPS",
             ],
             autoStart: true,
             loop: true,
