@@ -16,13 +16,13 @@ const instagram = {
   liveUrl: "http://react-instagramclone.herokuapp.com",
   githubUrl: "https://github.com/pawanjangle/react-insta-clone",
   videoUrl:
-    "https://www.linkedin.com/posts/pawanjangle_instagramclone-social-activity-6771762546635616256-h-Wf",
+    "https://www.linkedin.com/posts/pawanjangle_instagramclone-social-activity-6772006638552518656-cjtt",
 };
 const portfolio = {
   pic: portfolioss,
   liveUrl: "http://pawanjangle.netlify.app",
   githubUrl: "https://github.com/pawanjangle/portfolio",
-  videoUrl: "",
+  videoUrl: "https://www.linkedin.com/posts/pawanjangle_portfolio-activity-6772007440557977600-v4t1",
 };
 const Projects = () => {
   return (

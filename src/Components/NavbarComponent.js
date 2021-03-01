@@ -22,14 +22,15 @@ const NavbarComponent = () => {
             >
               <a
                 className="brand-logo"
-                style={{ fontFamily: "Grand Hotel cursive", cursor: "pointer"}}
+                style={{ fontFamily: "Grand Hotel cursive", cursor: "pointer" }}
               >
                 Portfolio
               </a>
-              <a data-target="mobile-demo" className="sidenav-trigger">
-                <i className="material-icons">menu</i>
-              </a>
             </Link>
+            <a data-target="mobile-demo" className="sidenav-trigger">
+              <i className="material-icons">menu</i>
+            </a>
+
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li className="nav-item">
                 <Link
