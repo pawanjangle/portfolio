@@ -56,7 +56,7 @@ const About = () => {
               <div className="m-3">
                 <a
                   className="waves-effect waves-light btn-large #f50057 pink accent-3"
-                  href="https://linkedin.com/in/pawan-jangle-a53219191"
+                  href="https://linkedin.com/in/pawan-jangle/"
                 >
                   Linkedin
                 </a>
