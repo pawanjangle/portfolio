@@ -9,7 +9,7 @@ const About = () => {
           <div className="col-md-4 text-center mt-3" style={{ maxHeight: "225px" }}>
             <img src={profilePic} alt="" style={{ height: "100%" }} />
           </div>
-          <div className="col-md-8 text-white d-flex flex-column align-items-center flex-wrap about p-3 mt-3">           
+          <div className="aboutInfo col-md-8 text-white d-flex flex-column align-items-center flex-wrap about p-3 mt-3">           
               Hi there! I am Pawan Jangle
               <br />I am a Full Stack Web Developer with React.js, Redux,
               Express.js, Node.js, Mongodb, and React Native as my tech stack.
@@ -31,14 +31,14 @@ const About = () => {
                   offset={50}
                   duration={500}
                 >
-                  <a className="waves-effect waves-light btn-large">
+                  <a className="waves-effect waves-light btn-large #f50057 pink accent-3">
                     Let's talk
                   </a>
                 </Link>
               </div>
               <div className="m-3">
                 <a
-                  className="waves-effect waves-light btn-large"
+                  className="waves-effect waves-light btn-large #f50057 pink accent-3"
                   href="https://drive.google.com/file/d/1M3vIIil62hdO4FkA6nJt7kF6ntvUTzAF/view?usp=sharing"
                 >
                   My resume
@@ -46,7 +46,7 @@ const About = () => {
               </div>
               <div className="m-3">
                 <a
-                  className="waves-effect waves-light btn-large"
+                  className="waves-effect waves-light btn-large #f50057 pink accent-3"
                   href="https://github.com/pawanjangle"
                 >
                   Github
@@ -54,7 +54,7 @@ const About = () => {
               </div>
               <div className="m-3">
                 <a
-                  className="waves-effect waves-light btn-large"
+                  className="waves-effect waves-light btn-large #f50057 pink accent-3"
                   href="https://linkedin.com/in/pawan-jangle-a53219191"
                 >
                   Linkedin

@@ -9,10 +9,10 @@ const ProjectData = ({ project}) => {
           style={{width: "100%",}}
         />
       </div>
-      <div className="d-flex justify-content-center my-3 flex-wrap">
-      <a className="waves-effect waves-light btn-small" href={project.liveUrl}>SEE LIVE</a>
-      <a className="waves-effect waves-light btn-small" href={project.githubUrl}>SOURCE CODE</a>
-      <a className="waves-effect waves-light btn-small" href={project.videoUrl}>VIDEO</a>
+      <div className="d-flex justify-content-around my-3 flex-wrap">
+      <a className="waves-effect waves-light btn-small #f50057 pink accent-3" href={project.liveUrl}>SEE LIVE</a>
+      <a className="waves-effect waves-light btn-small #f50057 pink accent-3" href={project.githubUrl}>SOURCE CODE</a>
+      <a className="waves-effect waves-light btn-small #f50057 pink accent-3" href={project.videoUrl}>VIDEO</a>
       </div>
     </div>
   );

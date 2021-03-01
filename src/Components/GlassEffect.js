@@ -8,7 +8,7 @@ const GlassEffect = ({ skillType }) => {
         {skillType.SkillsName.map((name, index) => {
           return (
             <div>
-              <p key={index}>{name}</p>
+              <p key={index} className="aboutInfo font-weight-bold">{name}</p>
             </div>
           );
         })}

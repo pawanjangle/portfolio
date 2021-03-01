@@ -27,7 +27,7 @@ const database = {
 };
 const hostingPlatforms = {
   type: "Hosting Platforms",
-  SkillsName: ["Heroku", "AWS"],
+  SkillsName: ["Heroku", "AWS", "Netlify"],
 };
 const vcs = {
   type: "Version Control System",
