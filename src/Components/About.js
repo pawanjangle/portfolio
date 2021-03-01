@@ -40,7 +40,7 @@ const About = () => {
               <div className="m-3">
                 <a
                   className="waves-effect waves-light btn-large #f50057 pink accent-3"
-                  href="https://drive.google.com/file/d/1M3vIIil62hdO4FkA6nJt7kF6ntvUTzAF/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1GEtUJFAU7aq1U5XPFo9I6lSfGUbZQ2g1/view?usp=sharing"
                 >
                   My resume
                 </a>
